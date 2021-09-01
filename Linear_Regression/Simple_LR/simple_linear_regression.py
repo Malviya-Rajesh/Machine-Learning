@@ -38,8 +38,8 @@ predication = np.dot(x_test, theta)
 #print(y_test)
 
 
-#mrse = 0.5 * np.sqrt((np.sum(np.square(predication - y_test)))) # Where mrse is "Mean Root Squre Error"
-#mse = 0.5 * (np.sum(np.square(predication - y_test))) # Where mse is "Mean Squre Error"
+#mrse = 0.5 * np.sqrt((np.sum(np.square(predication - y_test)))) # Where mrse is "Mean Root Squre Error" (Here we know y_test have 2 elemnts so 1/m = 0.5)
+#mse = 0.5 * (np.sum(np.square(predication - y_test))) # Where mse is "Mean Squre Error" (Here we know y_test have 2 elemnts so 1/m = 0.5) 
 #print(mrse,"\n",mse)
 # output :=> very very  low error
 

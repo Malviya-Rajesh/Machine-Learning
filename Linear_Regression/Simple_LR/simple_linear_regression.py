@@ -43,13 +43,9 @@ predication = np.dot(x_test, theta)
 #print(mrse,"\n",mse)
 # output :=> very very  low error
 
-def score(predication,y):
-    in_function_socre = np.sum(np.abs(((predication/y)*100)-100)) / len(y)
-    return 100 - in_function_socre
+j_test_theta = 0.5 * np.sum(np.square(predication - y_test))
 
-scores = score(predication,y_test)
-
-print(scores)
+print(100 - j_test_theta)
 
 plt.scatter(predication,y_test)
 plt.show()
